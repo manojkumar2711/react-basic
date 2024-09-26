@@ -1,0 +1,33 @@
+import React, { Component } from 'react';
+
+class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: ['Apple', 'Banana', 'Orange']
+    };
+  }
+
+  // Function to add a new item using setState
+  addItem = () => {
+    this.setState(prevState => ({
+      items: [...prevState.items, 'Grapes']  // Adding 'Grapes' to the items array
+    }));
+  };
+
+  render() {
+    return (
+      <div>
+        <h3>Fruit List:</h3>
+        <ul>
+          {this.state.items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+        <button onClick={this.addItem}>Add Grapes</button>
+      </div>
+    );
+  }
+}
+
+export default Home;
