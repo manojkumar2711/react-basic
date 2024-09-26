@@ -1,0 +1,44 @@
+import Home from './pages/landingpage';
+import './App.css';
+import { Component } from 'react';
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state={
+      
+    }
+
+  }
+  render() {
+    return (
+      <>
+        <Home />
+      </>
+    );
+  }
+}
+
+export default App;
+
+
+
+import {Component} from 'react'
+class Home extends Component{
+
+
+    constructor(props){
+        super(props);
+        this.state={}
+    }
+   render(){
+    return(
+        <>
+
+        <h1>fghjk</h1>
+        </>
+    )
+   }
+}
+export default Home;
+
